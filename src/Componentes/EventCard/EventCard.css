@@ -1,0 +1,75 @@
+.card {
+    background: white;
+    border-radius: 16px;
+    /* Bordas mais arredondadas */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    /* Sombra bem leve */
+    border: 1px solid #f0f0f0;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    /* Efeito de flutuar ao passar o mouse */
+}
+
+.card-image {
+    width: 100%;
+    height: 180px;
+    background-color: #dfe6e9;
+    /* Cor cinza da imagem do seu exemplo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #666;
+}
+
+.card-image img {
+  transition: transform 0.3s ease; /* Efeito de zoom ao passar o mouse */
+}
+
+.card:hover .card-image img {
+  transform: scale(1.1);
+}
+
+
+.card-content {
+    padding: 20px;
+}
+
+.card-category {
+    color: #6200ee;
+    /* Roxo do exemplo */
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 12px;
+}
+
+.card-info {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.card-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #6200ee;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.card-button:hover {
+    background: #4a00b0;
+}

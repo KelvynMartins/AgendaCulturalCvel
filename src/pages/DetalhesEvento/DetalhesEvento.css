@@ -1,0 +1,187 @@
+/* Container Centralizado estilo "Coluna de Jornal" */
+.journal-container {
+  max-width: 800px; /* Largura padrão de leitura */
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: #fff;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #333;
+}
+
+.btn-voltar {
+  background: none;
+  border: none;
+  color: #c4170c; /* Vermelho G1 */
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+  padding: 0;
+}
+
+.btn-voltar:hover {
+  text-decoration: underline;
+}
+
+/* --- CABEÇALHO --- */
+.journal-category {
+  display: inline-block;
+  color: #c4170c; /* Cor de destaque */
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  margin-bottom: 10px;
+}
+
+.journal-title {
+  font-size: 2.8rem; /* Título Gigante */
+  line-height: 1.1;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 15px;
+  letter-spacing: -1px;
+}
+
+.journal-subtitle {
+  font-size: 1.25rem;
+  color: #555;
+  line-height: 1.4;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+/* --- METADADOS (Autor, Data) --- */
+.journal-meta {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.journal-meta strong {
+  color: #333;
+}
+
+.divider {
+  margin: 0 10px;
+  color: #ddd;
+}
+
+/* --- BOTÕES SOCIAIS FAKE --- */
+.social-share {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.social-share button {
+  background: #f0f0f0;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #555;
+  cursor: pointer;
+}
+
+.journal-separator {
+  border: 0;
+  border-top: 1px solid #e0e0e0;
+  margin-bottom: 30px;
+}
+
+/* --- IMAGEM --- */
+.journal-figure {
+  width: 100%;
+  margin: 0 0 40px 0;
+}
+
+.journal-figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  display: block;
+}
+
+.journal-figure figcaption {
+  font-size: 0.8rem;
+  color: #777;
+  margin-top: 8px;
+  text-align: left;
+}
+
+/* --- CORPO DO TEXTO --- */
+.journal-body {
+  font-size: 1.15rem;
+  line-height: 1.8; /* Espaçamento confortável para leitura */
+  color: #2c2c2c;
+}
+
+.lead-text {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.journal-body p {
+  margin-bottom: 25px;
+}
+
+/* --- BOX DE SERVIÇO (Onde, Quando) --- */
+.service-box {
+  background-color: #f7f7f7;
+  padding: 25px;
+  border-left: 5px solid #c4170c;
+  margin-top: 40px;
+  border-radius: 4px;
+}
+
+.service-box h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+.service-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.service-box li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 5px;
+}
+
+.error-msg {
+  text-align: center;
+  padding-top: 150px;
+  font-size: 1.5rem;
+  color: #c4170c;
+}
+
+.journal-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: #fff;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #333;
+  text-align: center; /* ADICIONE ISSO AQUI */
+}
+
+/* Você precisará forçar o alinhamento da lista de serviço */
+.service-box {
+  text-align: left; /* Mantém a lista alinhada a esquerda para não ficar estranho */
+  /* ... resto das propriedades ... */
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+  .journal-title {
+    font-size: 2rem;
+  }
+  .journal-container {
+    padding: 20px;
+  }
+}

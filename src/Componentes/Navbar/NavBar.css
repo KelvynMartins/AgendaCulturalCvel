@@ -1,0 +1,94 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #282c34;
+    color: white;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.navbar-links a:hover {
+    color: #61dafb;
+    /* Cor clássica do React */
+}
+
+.navbar-nome, .navbar-logo, .navbar-links {
+  flex: 1;
+}
+
+.navbar-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+
+.navbar-logo {
+  display: flex;
+  justify-content: center; /* Centraliza a imagem no meio da coluna */
+}
+
+.navbar-logo img {
+  height: 60px; /* Ajuste a altura da logo conforme necessário */
+  width: auto;
+}
+
+.navbar-button {
+    padding: 8px 16px;
+    background-color: #61dafb;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Media Query para telas de até 768px (Celulares e Tablets) */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Empilha os itens um embaixo do outro */
+        height: auto;           /* Deixa a altura se ajustar ao conteúdo */
+        padding: 1rem;          /* Reduz um pouco o espaço interno */
+        position: relative;     /* Opcional: faz a página rolar com a navbar no mobile */
+    }
+
+    /* Removemos a divisão em 3 colunas iguais para que cada um use a largura total */
+    .navbar-nome, .navbar-logo, .navbar-links {
+        flex: none; 
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .navbar-nome {
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+    }
+
+    .navbar-logo img {
+        height: 50px; /* Diminui um pouco a logo no celular */
+        margin-bottom: 15px;
+    }
+
+    .navbar-links {
+        justify-content: center; /* Centraliza os links no meio da tela */
+        padding: 0;
+        flex-wrap: wrap;       /* Se os links forem muitos, eles quebram linha */
+        gap: 15px;
+    }
+
+    .navbar-links li {
+        margin: 5px 0;
+    }
+}
